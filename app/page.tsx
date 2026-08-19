@@ -44,10 +44,32 @@ export default function Home() {
           <div><p className="eyebrow"><span /> Craveable food</p><h2>DINING WITH<br /><em>AN ATTITUDE.</em></h2></div>
           <p>Our food is rich, unforgettable, and built to bring the energy to every kind of gathering.</p>
         </div>
-        <div className="feature-grid">
+        <div className="feature-grid reveal-group">
           <article className="feature-card dark"><span className="card-number">01 / THE ICON</span><div><p>RICH. CREAMY. UNFORGETTABLE.</p><h3>Mac n<br />Sheeesh</h3><a href="tel:+13232436728">Explore the menu ↗</a></div></article>
           <article className="feature-image"><img src="/food-8.jpg" alt="A signature King Cheffe dish" /></article>
           <article className="feature-card gold"><span className="card-number">02 / YOUR MOMENT</span><div><p>THE TABLE IS YOURS</p><h3>Private<br />Dining</h3><a href="tel:+13232436728">Plan your table ↗</a></div></article>
+        </div>
+      </section>
+
+      <section className="menu-showcase" id="menu">
+        <div className="shell menu-shell">
+          <div className="menu-intro">
+            <p className="eyebrow light"><span /> The menu</p>
+            <h2>A TASTE OF<br /><em>KING CHEFFE.</em></h2>
+            <p>Bold comfort food made to order. This is a sample of the energy—ask about the chef&apos;s current selection for your event.</p>
+            <a className="button light-button" href="tel:+13232436728">Request the full menu <span>↗</span></a>
+          </div>
+          <div className="menu-card" aria-label="Sample King Cheffe menu">
+            <div className="menu-card-head"><span>KC</span><p>Chef&apos;s selection / sample menu</p><span>2026</span></div>
+            <div className="menu-list">
+              <article><div><h3>Mac n Sheeesh</h3><p>The rich, legendary original with that unmistakable King Cheffe finish.</p></div><span>Signature</span></article>
+              <article><div><h3>Fried Lobster</h3><p>Crisp, golden, and made for the main-character moment.</p></div><span>Chef&apos;s pick</span></article>
+              <article><div><h3>Honey-Hot Wings</h3><p>Sweet heat with a glossy, craveable kick.</p></div><span>Favorite</span></article>
+              <article><div><h3>Loaded Pasta</h3><p>Comfort-forward pasta with big flavor in every forkful.</p></div><span>Classic</span></article>
+              <article><div><h3>Seasonal Sides</h3><p>Chef-driven sides designed to complete the table.</p></div><span>Rotating</span></article>
+            </div>
+            <p className="menu-note">Menus are customized by event. Dietary requests welcome.</p>
+          </div>
         </div>
       </section>
 
@@ -60,7 +82,7 @@ export default function Home() {
 
       <section className="gallery shell" id="gallery">
         <div className="section-heading compact"><div><p className="eyebrow"><span /> Fresh from the feed</p><h2>FOLLOW THE<br /><em>FLAVOR.</em></h2></div><a className="text-link" href="https://www.instagram.com/kingcheffe" target="_blank" rel="noreferrer">@kingcheffe ↗</a></div>
-        <div className="gallery-grid">{gallery.map((image, index) => <figure key={image} className={`tile tile-${index + 1}`}><img src={`/${image}`} alt={`King Cheffe food creation ${index + 1}`} /></figure>)}</div>
+        <div className="gallery-grid">{gallery.map((image, index) => <figure key={image} className={`tile tile-${index + 1}`}><img src={`/${image}`} alt={`King Cheffe food creation ${index + 1}`} /><figcaption>King Cheffe / {String(index + 1).padStart(2, "0")}</figcaption></figure>)}</div>
       </section>
 
       <section className="cta-section"><div className="shell"><p className="eyebrow light"><span /> Let’s make it a feast</p><h2>MAKE IT A<br /><em>KING CHEFFE</em><br />NIGHT.</h2><p>Private dinner, celebration, or full-scale event—tell us what you’re planning.</p><a className="button gold-button" href="tel:+13232436728">Reserve now <span>↗</span></a></div></section>
