@@ -1,5 +1,5 @@
 export default function Home() {
-  const gallery = ["food-2.jpg", "food-3.jpg", "food-4.jpg", "food-5.jpg", "food-6.jpg", "food-7.jpg"];
+  const gallery = ["king-cheffe-feast.png", "king-cheffe-mac.png", "king-cheffe-fire.png", "king-cheffe-feast.png", "king-cheffe-mac.png", "king-cheffe-fire.png"];
 
   return (
     <main>
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual">
-          <div className="hero-photo"><img src="/food-1.jpg" alt="King Cheffe signature comfort food" /></div>
+          <div className="hero-photo"><img src="/king-cheffe-mac.png" alt="King Cheffe signature baked macaroni and cheese" /></div>
           <div className="stamp"><span>HOME OF THE</span><strong>MAC N<br />SHEEESH</strong><i>★</i></div>
           <div className="hero-note"><b>KC</b><span>Private dining<br />& catering</span></div>
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <div className="feature-grid reveal-group">
           <article className="feature-card dark"><span className="card-number">01 / THE ICON</span><div><p>RICH. CREAMY. UNFORGETTABLE.</p><h3>Mac n<br />Sheeesh</h3><a href="tel:+13232436728">Explore the menu ↗</a></div></article>
-          <article className="feature-image"><img src="/food-8.jpg" alt="A signature King Cheffe dish" /></article>
+          <article className="feature-image"><img src="/king-cheffe-feast.png" alt="A King Cheffe comfort food feast" /></article>
           <article className="feature-card gold"><span className="card-number">02 / YOUR MOMENT</span><div><p>THE TABLE IS YOURS</p><h3>Private<br />Dining</h3><a href="tel:+13232436728">Plan your table ↗</a></div></article>
         </div>
       </section>
@@ -71,6 +71,21 @@ export default function Home() {
             <p className="menu-note">Menus are customized by event. Dietary requests welcome.</p>
           </div>
         </div>
+        <div className="shell detailed-menu">
+          <div className="detailed-menu-head"><p className="eyebrow light"><span /> Full flavor guide</p><p>Build a chef-curated spread around the moment. Final selections and pricing are tailored to your event.</p></div>
+          <div className="menu-columns">
+            <section><h3>Signature plates</h3><dl><div><dt>Mac n Sheeesh</dt><dd>Baked pasta, layered cheese, browned top, signature finishing blend.</dd></div><div><dt>Fried Lobster</dt><dd>Golden fried lobster tail with citrus, seasoning, and a chef-selected sauce.</dd></div><div><dt>Honey-Hot Wings</dt><dd>Crisp wings tossed in a sweet-heat glaze with a spicy finish.</dd></div></dl></section>
+            <section><h3>Comfort sides</h3><dl><div><dt>Loaded Pasta</dt><dd>Creamy pasta, savory seasoning, and a rich, crowd-pleasing finish.</dd></div><div><dt>Seasonal Vegetables</dt><dd>Fresh vegetables, roasted or sautéed to complement your spread.</dd></div><div><dt>Chef&apos;s Rice</dt><dd>Flavor-forward rice prepared to pair with your selected entrée.</dd></div></dl></section>
+            <section><h3>For your event</h3><dl><div><dt>Private Dinner</dt><dd>An intimate, plated experience with a custom menu and chef service.</dd></div><div><dt>Drop-Off Catering</dt><dd>Generous trays and elevated presentation for groups of any size.</dd></div><div><dt>Celebration Spread</dt><dd>Shareable plates designed for birthdays, brunches, and big nights.</dd></div></dl></section>
+          </div>
+        </div>
+      </section>
+
+      <section className="motion-section" aria-label="Cinematic kitchen visual">
+        <div className="motion-backdrop" role="img" aria-label="Chef finishing a signature King Cheffe plate with a flame"><img src="/king-cheffe-fire.png" alt="" /></div>
+        <div className="motion-scan" />
+        <div className="motion-copy"><p className="eyebrow light"><span /> The King Cheffe experience</p><h2>SEE THE<br /><em>FLAVOR</em><br />IN MOTION.</h2><p>Every event brings heat, rhythm, and a little theater to the table.</p></div>
+        <span className="motion-status"><i /> LIVE FROM THE KITCHEN</span>
       </section>
 
       <section className="about" id="about">
