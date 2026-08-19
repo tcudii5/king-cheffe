@@ -1,109 +1,30 @@
+const menu = [
+  ["01", "Mac n Sheeesh", "Three-cheese baked pasta, caramelized top, signature seasoning", "Signature"],
+  ["02", "Fried Lobster", "Crispy lobster tail, charred lemon, chef’s sauce", "Chef’s pick"],
+  ["03", "Honey-Hot Wings", "Golden wings, glossy sweet heat, cooling dip", "Crowd favorite"],
+  ["04", "Loaded Pasta", "Creamy pasta, savory layers, seasonal garnish", "Comfort classic"],
+];
+
 export default function Home() {
-  const gallery = ["king-cheffe-feast.png", "king-cheffe-mac.png", "king-cheffe-fire.png", "king-cheffe-feast.png", "king-cheffe-mac.png", "king-cheffe-fire.png"];
-
-  return (
-    <main>
-      <nav className="nav shell" aria-label="Main navigation">
-        <a className="brand" href="#top" aria-label="King Cheffe home">
-          <span className="brand-mark">K</span>
-          <span>KING<br />CHEFFE</span>
-        </a>
-        <div className="nav-links">
-          <a href="#menu">Menu</a>
-          <a href="#about">The Chef</a>
-          <a href="#gallery">Gallery</a>
-        </div>
-        <a className="nav-cta" href="tel:+13232436728">Reserve your experience</a>
+  return <main>
+    <section className="opening" id="top">
+      <nav className="topbar" aria-label="Primary navigation">
+        <a className="wordmark" href="#top">KING<span>CHEFFE</span></a>
+        <div className="top-links"><a href="#menu">Menu</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+        <a className="reserve-link" href="tel:+13232436728">Book an event <b>↗</b></a>
       </nav>
-
-      <section className="hero shell" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span /> Baltimore · DC · nationwide</p>
-          <h1>THE ULTIMATE<br /><em>FLAVOR</em><br />EXPERIENCE.</h1>
-          <p className="lede">Award-worthy comfort food, standout private dining, and the legendary Mac n Sheeesh—made to be remembered.</p>
-          <div className="hero-actions">
-            <a className="button primary" href="tel:+13232436728">Reserve now <span>↗</span></a>
-            <a className="text-link" href="#menu">Explore cuisine <span>↓</span></a>
-          </div>
-          <div className="social-proof">
-            <div className="avatars"><img src="/profile.jpg" alt="King Cheffe" /><span>355K+</span></div>
-            <p><strong>A food community that knows flavor.</strong><br />Follow the movement @kingcheffe</p>
-          </div>
-        </div>
-        <div className="hero-visual">
-          <div className="hero-photo"><img src="/king-cheffe-mac.png" alt="King Cheffe signature baked macaroni and cheese" /></div>
-          <div className="stamp"><span>HOME OF THE</span><strong>MAC N<br />SHEEESH</strong><i>★</i></div>
-          <div className="hero-note"><b>KC</b><span>Private dining<br />& catering</span></div>
-        </div>
-      </section>
-
-      <section className="ticker" aria-label="Service areas"><div>PRIVATE DINING <b>✦</b> CATERING <b>✦</b> BALTIMORE <b>✦</b> DC <b>✦</b> LA <b>✦</b> NY / NJ <b>✦</b> TEXAS <b>✦</b> ATLANTA <b>✦</b></div></section>
-
-      <section className="menu-section shell" id="menu">
-        <div className="section-heading">
-          <div><p className="eyebrow"><span /> Craveable food</p><h2>DINING WITH<br /><em>AN ATTITUDE.</em></h2></div>
-          <p>Our food is rich, unforgettable, and built to bring the energy to every kind of gathering.</p>
-        </div>
-        <div className="feature-grid reveal-group">
-          <article className="feature-card dark"><span className="card-number">01 / THE ICON</span><div><p>RICH. CREAMY. UNFORGETTABLE.</p><h3>Mac n<br />Sheeesh</h3><a href="tel:+13232436728">Explore the menu ↗</a></div></article>
-          <article className="feature-image"><img src="/king-cheffe-feast.png" alt="A King Cheffe comfort food feast" /></article>
-          <article className="feature-card gold"><span className="card-number">02 / YOUR MOMENT</span><div><p>THE TABLE IS YOURS</p><h3>Private<br />Dining</h3><a href="tel:+13232436728">Plan your table ↗</a></div></article>
-        </div>
-      </section>
-
-      <section className="menu-showcase" id="menu">
-        <div className="shell menu-shell">
-          <div className="menu-intro">
-            <p className="eyebrow light"><span /> The menu</p>
-            <h2>A TASTE OF<br /><em>KING CHEFFE.</em></h2>
-            <p>Bold comfort food made to order. This is a sample of the energy—ask about the chef&apos;s current selection for your event.</p>
-            <a className="button light-button" href="tel:+13232436728">Request the full menu <span>↗</span></a>
-          </div>
-          <div className="menu-card" aria-label="Sample King Cheffe menu">
-            <div className="menu-card-head"><span>KC</span><p>Chef&apos;s selection / sample menu</p><span>2026</span></div>
-            <div className="menu-list">
-              <article><div><h3>Mac n Sheeesh</h3><p>The rich, legendary original with that unmistakable King Cheffe finish.</p></div><span>Signature</span></article>
-              <article><div><h3>Fried Lobster</h3><p>Crisp, golden, and made for the main-character moment.</p></div><span>Chef&apos;s pick</span></article>
-              <article><div><h3>Honey-Hot Wings</h3><p>Sweet heat with a glossy, craveable kick.</p></div><span>Favorite</span></article>
-              <article><div><h3>Loaded Pasta</h3><p>Comfort-forward pasta with big flavor in every forkful.</p></div><span>Classic</span></article>
-              <article><div><h3>Seasonal Sides</h3><p>Chef-driven sides designed to complete the table.</p></div><span>Rotating</span></article>
-            </div>
-            <p className="menu-note">Menus are customized by event. Dietary requests welcome.</p>
-          </div>
-        </div>
-        <div className="shell detailed-menu">
-          <div className="detailed-menu-head"><p className="eyebrow light"><span /> Full flavor guide</p><p>Build a chef-curated spread around the moment. Final selections and pricing are tailored to your event.</p></div>
-          <div className="menu-columns">
-            <section><h3>Signature plates</h3><dl><div><dt>Mac n Sheeesh</dt><dd>Baked pasta, layered cheese, browned top, signature finishing blend.</dd></div><div><dt>Fried Lobster</dt><dd>Golden fried lobster tail with citrus, seasoning, and a chef-selected sauce.</dd></div><div><dt>Honey-Hot Wings</dt><dd>Crisp wings tossed in a sweet-heat glaze with a spicy finish.</dd></div></dl></section>
-            <section><h3>Comfort sides</h3><dl><div><dt>Loaded Pasta</dt><dd>Creamy pasta, savory seasoning, and a rich, crowd-pleasing finish.</dd></div><div><dt>Seasonal Vegetables</dt><dd>Fresh vegetables, roasted or sautéed to complement your spread.</dd></div><div><dt>Chef&apos;s Rice</dt><dd>Flavor-forward rice prepared to pair with your selected entrée.</dd></div></dl></section>
-            <section><h3>For your event</h3><dl><div><dt>Private Dinner</dt><dd>An intimate, plated experience with a custom menu and chef service.</dd></div><div><dt>Drop-Off Catering</dt><dd>Generous trays and elevated presentation for groups of any size.</dd></div><div><dt>Celebration Spread</dt><dd>Shareable plates designed for birthdays, brunches, and big nights.</dd></div></dl></section>
-          </div>
-        </div>
-      </section>
-
-      <section className="motion-section" aria-label="Cinematic kitchen visual">
-        <div className="motion-backdrop" role="img" aria-label="Chef finishing a signature King Cheffe plate with a flame"><img src="/king-cheffe-fire.png" alt="" /></div>
-        <div className="motion-scan" />
-        <div className="motion-copy"><p className="eyebrow light"><span /> The King Cheffe experience</p><h2>SEE THE<br /><em>FLAVOR</em><br />IN MOTION.</h2><p>Every event brings heat, rhythm, and a little theater to the table.</p></div>
-        <span className="motion-status"><i /> LIVE FROM THE KITCHEN</span>
-      </section>
-
-      <section className="about" id="about">
-        <div className="shell about-inner">
-          <div className="about-photo"><img src="/profile.jpg" alt="King Cheffe" /><span>CHEF / CREATOR / HOST</span></div>
-          <div className="about-copy"><p className="eyebrow light"><span /> The vibe starts here</p><h2>FOOD THAT<br /><em>GOES WITH</em><br />THE MOMENT.</h2><p>King Cheffe brings a show-stopping dining experience wherever the table is set. Intimate dinners, packed events, late-night cravings—every booking has flavor and a little attitude.</p><div className="stats"><div><strong>355K+</strong><span>FOOD LOVERS</span></div><div><strong>7</strong><span>MARKETS SERVED</span></div><div><strong>1</strong><span>KING CHEFFE</span></div></div><a className="button light-button" href="https://www.instagram.com/kingcheffe" target="_blank" rel="noreferrer">Follow on Instagram ↗</a></div>
-        </div>
-      </section>
-
-      <section className="gallery shell" id="gallery">
-        <div className="section-heading compact"><div><p className="eyebrow"><span /> Fresh from the feed</p><h2>FOLLOW THE<br /><em>FLAVOR.</em></h2></div><a className="text-link" href="https://www.instagram.com/kingcheffe" target="_blank" rel="noreferrer">@kingcheffe ↗</a></div>
-        <div className="gallery-grid">{gallery.map((image, index) => <figure key={image} className={`tile tile-${index + 1}`}><img src={`/${image}`} alt={`King Cheffe food creation ${index + 1}`} /><figcaption>King Cheffe / {String(index + 1).padStart(2, "0")}</figcaption></figure>)}</div>
-      </section>
-
-      <section className="cta-section"><div className="shell"><p className="eyebrow light"><span /> Let’s make it a feast</p><h2>MAKE IT A<br /><em>KING CHEFFE</em><br />NIGHT.</h2><p>Private dinner, celebration, or full-scale event—tell us what you’re planning.</p><a className="button gold-button" href="tel:+13232436728">Reserve now <span>↗</span></a></div></section>
-
-      <footer className="footer shell"><a className="brand" href="#top"><span className="brand-mark">KC</span><span>KING CHEFFE</span></a><p>Traveling chef & caterer<br />Downtown Baltimore, MD</p><div><a href="tel:+13232436728">323-243-6728</a><a href="https://www.instagram.com/kingcheffe" target="_blank" rel="noreferrer">Instagram ↗</a></div><small>© 2026 KING CHEFFE. ALL FLAVOR RESERVED.</small></footer>
-      <a className="mobile-book" href="tel:+13232436728">BOOK KING CHEFFE <span>↗</span></a>
-    </main>
-  );
+      <div className="hero-frame">
+        <video className="hero-video" autoPlay muted loop playsInline poster="/king-cheffe-mac.png" aria-label="Cinematic King Cheffe food preparation video"><source src="/king-cheffe-film.mp4" type="video/mp4" /></video>
+        <div className="hero-wash" />
+        <div className="hero-copy"><p className="kicker">Baltimore / DC / nationwide</p><h1>THE TABLE<br />IS THE<br /><i>STAGE.</i></h1><p className="hero-sub">Catering and private dining with flavor, rhythm, and the legendary Mac n Sheeesh.</p><a className="round-play" href="#experience" aria-label="Discover the King Cheffe experience"><span>Discover<br />the vibe</span><b>↓</b></a></div>
+        <div className="hero-bottom"><span>01—KING CHEFFE</span><span>PRIVATE DINING / CATERING</span><span className="live-dot"><i /> KITCHEN LIVE</span></div>
+      </div>
+    </section>
+    <section className="statement" id="experience"><div className="statement-grid"><p className="eyeline">The flavor is the event.</p><h2>NOT JUST<br />FOOD.<br /><em>A MOMENT.</em></h2><p className="statement-body">King Cheffe creates the kind of spread that makes people stop talking, lean in, and take another picture. Every plate is made for the memory.</p><div className="statement-stat"><strong>355K</strong><span>FOOD LOVERS<br />FOLLOW THE FLAVOR</span></div></div></section>
+    <section className="film-strip" aria-label="Signature food montage"><img src="/king-cheffe-feast.png" alt="King Cheffe luxury comfort food spread" /><div className="strip-copy"><span>COMFORT</span><b>✦</b><span>HEAT</span><b>✦</b><span>FLAVOR</span><b>✦</b><span>COMFORT</span></div></section>
+    <section className="menu-section" id="menu"><header className="menu-header"><p className="eyeline">A taste of King Cheffe</p><h2>THE<br /><em>MENU</em></h2><p>Chef-curated comfort food for gatherings that deserve a little extra.</p></header><div className="menu-grid"><div className="menu-art"><img src="/king-cheffe-mac.png" alt="Creamy King Cheffe macaroni and cheese" /><span>HOME OF THE<br /><b>MAC N SHEEESH</b></span></div><div className="menu-list">{menu.map(([number, name, description, label]) => <article key={name}><span className="dish-number">{number}</span><div><h3>{name}</h3><p>{description}</p></div><small>{label}</small></article>)}<a className="menu-cta" href="tel:+13232436728">Request your custom menu <b>↗</b></a></div></div><p className="menu-fine">Menu selections are personalized for each event. Dietary requests welcome.</p></section>
+    <section className="motion-canvas"><div className="canvas-image"><img src="/king-cheffe-fire.png" alt="Chef applying flame to a signature dish" /></div><div className="orbit orbit-a" /><div className="orbit orbit-b" /><div className="scanline" /><div className="canvas-copy"><p className="eyeline">Made to move a room</p><h2>BRING<br />THE <em>HEAT.</em></h2><p>From a table for two to a room full of celebration, the energy arrives with every plate.</p><a href="tel:+13232436728">Plan your event <b>↗</b></a></div><p className="canvas-stamp">KC<br /><span>EST. FOR<br />THE MOMENT</span></p></section>
+    <section className="services"><p className="eyeline">Choose your moment</p><div className="service-row"><span>01</span><h3>Private dining</h3><p>Intimate tables, a custom menu, and a chef-led experience.</p><a href="tel:+13232436728">Book ↗</a></div><div className="service-row"><span>02</span><h3>Celebrations</h3><p>Birthdays, brunches, and the kind of nights people remember.</p><a href="tel:+13232436728">Book ↗</a></div><div className="service-row"><span>03</span><h3>Event catering</h3><p>Big flavor and generous spreads, from Baltimore to beyond.</p><a href="tel:+13232436728">Book ↗</a></div></section>
+    <footer id="contact"><div><a className="wordmark" href="#top">KING<span>CHEFFE</span></a><p>Traveling chef & caterer<br />Downtown Baltimore</p></div><div><a href="tel:+13232436728">323-243-6728</a><a href="https://www.instagram.com/kingcheffe" target="_blank" rel="noreferrer">Instagram ↗</a></div><p className="footer-note">THE TABLE IS WAITING.<br />LET&apos;S MAKE IT A MOMENT.</p></footer><a className="mobile-reserve" href="tel:+13232436728">Book King Cheffe <b>↗</b></a>
+  </main>;
 }
